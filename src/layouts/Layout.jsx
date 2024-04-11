@@ -9,9 +9,7 @@ function Layout() {
   return (
     <React.StrictMode>
       <Header />
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
     </React.StrictMode>
   );

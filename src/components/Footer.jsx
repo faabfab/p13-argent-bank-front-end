@@ -1,10 +1,12 @@
 import React from "react";
 
 function Footer() {
+  const aujd = new Date();
+  const year = aujd.getFullYear();
   return (
     <React.StrictMode>
       <footer className="footer">
-        <p className="footer-text">Copyright 2020 Argent Bank</p>
+        <p className="footer-text">Copyright {year} Argent Bank</p>
       </footer>
     </React.StrictMode>
   );
