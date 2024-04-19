@@ -10,6 +10,8 @@
 
 # production
 /build
+/.pnotes
+/.vscode
 
 # misc
 .DS_Store
