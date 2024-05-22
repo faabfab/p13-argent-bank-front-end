@@ -57,6 +57,7 @@ function Signin() {
         const data2 = await response.json();
         const userUrl = `/user/${data2.body.id}`;
         const userData = {
+          token: `${data.body.token}`,
           email: `${data2.body.email}`,
           firstName: `${data2.body.firstName}`,
           lastName: `${data2.body.lastName}`,
