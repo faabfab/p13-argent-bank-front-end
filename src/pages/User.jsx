@@ -36,7 +36,6 @@ function User() {
       requestOptions2
     );
     const resData = await response.json();
-    console.log(resData.status);
     if (resData.status === 200) {
       const userData = {
         token: `${user.token}`,
@@ -58,7 +57,6 @@ function User() {
     const first = document.getElementById("firstName");
     const last = document.getElementById("lastName");
     if (!first.value && !last.value) {
-      console.log("pas de changement !!!");
       editName();
     }
     if (first.value && !last.value) {
